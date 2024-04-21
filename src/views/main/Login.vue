@@ -1,18 +1,18 @@
 <template>
-  <div
-    style="
-      background: url('../../assets/images/sdss/black_icon_transparent_background.png') no-repeat;
-      background-size: cover;
-    "
-    class="px-4 py-8 md:px-6 lg:px-8"
-  >
-    <div class="flex flex-wrap">
+  <div class="p-1 sm:p-3 md:p-6 lg:p-10">
+    <div class="grid grid-cols-4 grid-flow-rows">
+      <img
+        src="../../assets/images/sdss/black_icon_transparent_background.png"
+        alt="Image"
+        class="row-span-1 col-span-4 mb-8 w-1/5 sm:max-w-1/5 justify-self-center"
+      />
       <div
-        class="w-full lg:w-6 p-4 lg:p-7"
+        class="row-span-2 col-span-2 lg:p-7"
         style="background-color: rgba(255, 255, 255, 0.7)"
       >
-        <img src="../../assets/images/sdss/black_icon_transparent_background.png" alt="Image" height="50" class="mb-6" />
-        <div class="text-xl text-900 font-500 mb-3">Welcome to Swiss Digital Shipping Solutions</div>
+        <div class="text-900 text-2xl font-medium mb-3">
+          Welcome to Swiss Digital Shipping Solutions
+        </div>
         <p class="text-600 line-height-3 mt-0 mb-6">
           Quis vel eros donec ac odio tempor orci dapibus. In hac habitasse
           platea dictumst quisque.
@@ -71,45 +71,16 @@
           </li>
         </ul>
       </div>
-      <div class="w-full lg:w-6 p-4 lg:p-7 surface-card">
+      <div
+        class="row-span-2 col-span-2 lg:p-7 surface-card flex flex-col justify-between"
+      >
         <div class="text-900 text-2xl font-medium mb-6">Anmelden</div>
-        <!-- <label for="email3" class="block text-900 font-medium mb-2"
-          >Email</label
+        <Button
+          label="Login"
+          class="bx-btn w-full"
+          raised
+          @click="goTo('bexio')"
         >
-        <InputText
-          id="email3"
-          type="text"
-          placeholder="Email address"
-          class="w-full mb-4"
-        />
-
-        <label for="password3" class="block text-900 font-medium mb-2"
-          >Password</label
-        >
-        <InputText
-          id="password3"
-          type="password"
-          placeholder="Password"
-          class="w-full mb-4"
-        /> -->
-
-        <!-- <div class="flex align-items-center justify-content-between mb-6">
-          <div class="flex align-items-center">
-            <Checkbox
-              id="rememberme3"
-              :binary="true"
-              v-model="checked3"
-              class="mr-2"
-            ></Checkbox>
-            <label for="rememberme3">Remember me</label>
-          </div>
-          <a
-            class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer"
-            >Forgot password?</a
-          >
-        </div> -->
-
-        <Button label="Login" class="bx-btn w-full" raised @click="goTo('bexio')">
           <div class="flex align-items-center gap-2 px-1">
             <img
               align="start"
