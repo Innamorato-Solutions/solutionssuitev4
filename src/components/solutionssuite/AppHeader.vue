@@ -70,9 +70,9 @@ import { useSolutionsSuiteStore } from "../../stores/solutionssuite/solutionsSui
 import { MenuItem } from "primevue/menuitem";
 import Dialog from 'primevue/dialog';
 import Dropdown from 'primevue/dropdown';
-
 import { bxIcon } from "../../assets/base64/index";
 
+const SolSuiteStore = useSolutionsSuiteStore()
 
 const { t, locale } = useI18n({ useScope: 'global' })
 const $i18n = inject('$i18n')
@@ -116,7 +116,6 @@ const userItems: MenuItem[] = [
 ]
 
 
-const SolSuiteStore = useSolutionsSuiteStore()
 
 </script>
 
